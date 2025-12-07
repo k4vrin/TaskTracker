@@ -1,0 +1,54 @@
+# macOS
+.DS_Store
+
+# IDEs & editors
+.idea/
+*.iml
+.vscode/
+*.swp
+*~
+
+# Maven / Java (backend)
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+*.log
+*.hprof
+*.orig
+*.rej
+.classpath
+.project
+.settings/
+
+# Spring Boot / coverage
+*.exec
+*.ec
+*.out
+build/
+
+# Node / frontend
+node_modules/
+dist/
+coverage/
+*.tsbuildinfo
+*.eslintcache
+*.npmrc
+*.yarnrc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment & local configs
+.env
+.env.*
+.env.local
+.env.*.local
+.DS_Store?
+
+# OS files
+Thumbs.db
