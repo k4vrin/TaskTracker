@@ -1,3 +1,13 @@
 spring:
   application:
     name: TaskTracker
+  jpa:
+    hibernate:
+      # Automatically update the database schema to match the entity models
+      ddl-auto: update
+    # Enable SQL logging for debugging purposes
+    show-sql: true
+  h2:
+    console:
+      # Enable the H2 database web console for in-browser access
+      enabled: true

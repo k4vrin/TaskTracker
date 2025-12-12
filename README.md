@@ -11,17 +11,17 @@ Full-stack CRUD app built with Spring Boot and React. Follow the day-by-day plan
 
 -   [x] Install tools: Java 21, IntelliJ IDEA, Node.js + npm, Postman/Thunder Client, Git.
     -   Validation: `java -version` shows 21; IntelliJ opens; Node installed.
--   [x] Create Spring Boot project via Spring Initializr with Spring Web, Spring Data JPA, H2, Lombok.
-    -   Validation: `./gradlew bootRun` starts; visiting `http://localhost:8080` shows Whitelabel page.
+-   [x] Create Spring Boot project via Spring Initializr with Spring Web, Spring Data JPA, H2, Lombok (using Maven wrapper).
+    -   Validation: `./mvnw spring-boot:run` starts; visiting `http://localhost:8080` shows Whitelabel page.
 -   [x] Add test endpoint `/api/test` returning `Hello Task Tracker!`.
     -   Validation: GET `/api/test` responds with the string.
 
 ## Day 2 — Build Task CRUD Backend
 
--   [ ] Create `Task` entity with `id`, `title`, `completed` fields.
--   [ ] Add `TaskRepository extends JpaRepository<Task, Long>`.
--   [ ] Implement `TaskService` for findAll/save/delete.
--   [ ] Create `TaskController` with GET/POST/PUT/DELETE on `/api/tasks`.
+-   [x] Create `Task` entity with `id`, `title`, `completed` fields.
+-   [x] Add `TaskRepository extends JpaRepository<Task, Long>`.
+-   [x] Implement `TaskService` for findAll/save/delete.
+-   [x] Create `TaskController` with GET/POST/PUT/DELETE on `/api/tasks`.
     -   Validation (Postman): list, create, update, delete all work.
 
 ## Day 3 — Frontend Setup & Basic UI
@@ -62,7 +62,7 @@ Full-stack CRUD app built with Spring Boot and React. Follow the day-by-day plan
 
 ## How to Validate Progress Quickly
 
--   Back end: `./gradlew test` and `./gradlew bootRun`; hit REST endpoints via Postman.
+-   Back end: `./mvnw test` and `./mvnw spring-boot:run`; hit REST endpoints via Postman.
 -   Front end: `npm run dev` in `task-tracker-ui`; check CRUD flows in the browser.
 -   Database: inspect H2 console during development.
 
